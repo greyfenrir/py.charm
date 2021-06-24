@@ -1,0 +1,1 @@
+PYTHONPATH=tests/modules python -m nose tests.modules.test_prog:TestProg.test_prog

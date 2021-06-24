@@ -3,9 +3,11 @@ import selenium
 
 def func():
     file = selenium.__file__
-    if 'src' not in file:
-        raise BaseException(file)
+    if 'src' in file:
+        print("It's my file!: {file}")
+    else:
+        raise BaseException(f"Wrong file: {file}")
 
 
-if __name__ == "main":
+if __name__ == "__main__":
     func()
